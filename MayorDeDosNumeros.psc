@@ -1,23 +1,20 @@
 Proceso MayorDeDosNumeros
-	//Leer dos números y mostrar cuál es el mayor. Si son iguales, indicar que son iguales.
-	
+	//Solicita dos números y muestra cuál es mayor o si son iguales.
 	Definir a Como Entero;
-	Definir b Como Entero;
+	Definir b como Entero;
+	Imprimir "Ingresa el primer número";
+	leer a;
 	
-	Imprimir "Introduce el primer numero";
-	Leer a;
-	
-	Imprimir "Introduce el segundo numero";
-	Leer b;
+	Imprimir "Ingresa el segundo número";
+	leer b;
 	
 	si a>b Entonces
-		Imprimir "el numero ",a, " es mayor";
+		Imprimir a, " es mayor que ", b;
 	SiNo
 		si a<b Entonces
-			Imprimir "el numero ",b, " es mayor";
+			Imprimir a, " es menor que ",b;
 		SiNo
-			Imprimir "son iguales ", a, " = ",b;
+			Imprimir a, " es igual a ", b;
 		FinSi
 	FinSi
 FinProceso
-
